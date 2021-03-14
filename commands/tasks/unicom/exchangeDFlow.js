@@ -146,7 +146,7 @@ var exchangeDFlow = {
             })
         })
         console.info(data)
-
+/*
         console.info('等待10秒查询激活状态')
         await new Promise((resolve, reject) => setTimeout(resolve, 10000))
 
@@ -158,7 +158,7 @@ var exchangeDFlow = {
             console.notify(selectedFlow.productName, '激活失败')
             throw new Error(selectedFlow.productName + ' 激活失败')
         }
-    },
+    }, */
     queryPrizeDetails: async (axios, options) => {
         const { firstPackage, selectedFlow } = options
         const useragent = buildUnicomUserAgent(options, 'p')
